@@ -1,0 +1,220 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  margin: 10px;
+  background-color: lightgray;
+}
+/* first  */
+.first {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: grey solid 1px;
+}
+.first-logo {
+  background-image: url(images/1.png);
+  background-position: center;
+  background-size: cover;
+  width: 70px;
+  height: 70px;
+}
+.first-h1 {
+  color: rgb(0, 183, 255);
+}
+.first-img {
+  background-image: url(images/2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 70px;
+}
+/* second  */
+.second {
+  background-color: rgb(0, 183, 255);
+  border-radius: 50px 50px;
+  width: 80%;
+  margin: auto;
+  padding: 5px 20px;
+}
+.second-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: 
+  "a b c d e f g h";
+  gap: 5px;
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+.second-grid>p{
+    background-color: skyblue;
+    padding: 10px 0px;
+    margin: 0px;
+}
+/* third  */
+.third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.third-flex-section1-h1{
+    margin: 50px 0px;
+}
+.third-flex-section1-h4-i{
+    padding-right: 200px;
+}
+.third-flex-section1-h4-ii{
+    color: orange;
+    margin: 60px 0px;
+}
+.third-flex-section1{
+    width: 50%;
+}
+.third-flex-section2{
+    background-image: url(images/3.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+/* fourth  */
+.fourth{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "a1 b1 c1 d1";
+    gap: 2px;
+    border-top: 5px orange solid;
+    background-color: darkgray;
+    border-radius: 0px 0px 20px 20px;
+    padding: 0px 20px 30px 20px;
+    box-shadow: grey 0px 3px 0px;
+    margin-bottom: 50px;
+}
+.fourth-grid-section-p{
+    text-align: justify;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 2px black solid;
+}
+.fourth-grid-section-p-{
+    text-align: justify;
+
+}
+.fourth-grid-section-btn{
+    border: none;
+    background-color: rgb(100, 100, 100);
+    color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    box-shadow: black 0px 2px 0px;
+}
+/* fifth */
+.fifth-outer{
+  width: 100%;
+  background-color: rgb(0, 183, 255);
+  color: white;
+}
+.fifth-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.fifth-flex-section-h4-img{
+  background-image: url(images/4.png);
+  background-position: center;
+  background-size: cover;
+  width: 90px;
+  height: 30px;
+}
+/* media queries */
+@media screen and (max-width: 700px) {
+  .first-logo{
+    display: none;
+  }
+  .first-img{
+    display: none;
+  }
+  .second-grid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "a b c d"
+    "e f g h";
+  }
+  .third{
+    flex-wrap: wrap;
+  }
+  .third-flex-section1{
+    width: 100%;
+    text-align: center;
+  }
+  .third-flex-section1-h4-i{
+    padding: 0px;
+  }
+  .third-flex-section2{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .fourth{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "a1 b1"
+    "c1 d1";
+  }
+  .-m-{
+    padding-right: 0px;
+    border-right: none;
+    margin-right: 0px;
+
+  }
+  
+}
+@media screen and (max-width: 500px) {
+.second-grid{
+  grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "a b"
+    "c d"
+    "e f"
+    "g h";
+}
+.fourth{
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: 
+  "a1"
+  "b1"
+  "c1"
+  "d1";
+  text-align: center;
+  gap: 50px;
+}
+.-m1-{
+  padding-right: 0px;
+  border-right: none;
+  margin-right: 0px;
+}
+.fifth-flex{
+  text-align: center;
+  gap: 50px;
+}
+.fifth-flex-section{
+  width: 100%;
+}
+.fifth-flex-section-h4-img{
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+}
